@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private Button btn_login;
     private LoginPresenter presenter;
     private Intent intent;
+    private String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btn_login.setOnClickListener(this);
         txt_signup.setOnClickListener(this);
         txt_forgotPass.setOnClickListener(this);
+        //
+        name = "test commit";
     }
 
     @Override
